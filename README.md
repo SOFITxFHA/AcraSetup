@@ -19,3 +19,4 @@ This guide will help the developers into integrating Acra into their projects.
                 basicAuthPassword = "xxxxxxxxxx" //TODO Update this with your app integration
 		    httpMethod = HttpSender.Method.POST
             }
+	    }
