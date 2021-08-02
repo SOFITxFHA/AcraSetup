@@ -20,3 +20,5 @@ This guide will help the developers into integrating Acra into their projects.
 		    httpMethod = HttpSender.Method.POST
             }
 	    }
+	    
+## 4 - Remove the TODO tags once your update your "basicAuthLogin" and "basicAuthPassword"
