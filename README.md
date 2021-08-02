@@ -20,18 +20,6 @@ This guide will help the developers into integrating Acra into their projects.
                 basicAuthLogin = "xxxxxxxx" //TODO Update this with your app integration
                 //required if above set
                 basicAuthPassword = "xxxxxxxxxx" //TODO Update this with your app integration
-                // defaults to POST
-                httpMethod = HttpSender.Method.POST
-                //defaults to 5000ms
-                connectionTimeout = 5000
-                //defaults to 20000ms
-                socketTimeout = 20000
-                // defaults to false
-                dropReportsOnTimeout = false
-                //defaults to false. Recommended if your backend supports it
-                compress = false
-                //defaults to all
-                tlsProtocols = arrayOf(TLS.V1_3, TLS.V1_2, TLS.V1_1, TLS.V1)
             }
             
 ## 4 - Update basicAuthLogin and basicAuthPassword with the acra integration that will be shared with you for your app (Example Code is given below):
