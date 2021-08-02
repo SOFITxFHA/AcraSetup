@@ -2,7 +2,7 @@
 
 This guide will help the developers into integrating Acra into their projects. 
 
-# 1 - Add Acra dependency into your app build.gradle file:
+## 1 - Add Acra dependency into your app build.gradle file:
     implementation("ch.acra:acra-http:$acraVersion")
     implementation("ch.acra:acra-mail:$acraVersion")
     implementation("ch.acra:acra-core:$acraVersion")
@@ -10,10 +10,10 @@ This guide will help the developers into integrating Acra into their projects.
     implementation("ch.acra:acra-notification:$acraVersion")
     implementation("ch.acra:acra-toast:$acraVersion")
     
-# 2 - Add Acra version ext to your project level build.gradle file
+## 2 - Add Acra version ext to your project level build.gradle file
     ext.acraVersion = "5.8.2"
 
-# 3 - Add the following code to your Application class:
+## 3 - Add the following code to your Application class:
     CrashReporter.initialize(this, path)
         initAcra {
             reportFormat = StringFormat.JSON
@@ -36,4 +36,15 @@ This guide will help the developers into integrating Acra into their projects.
                 compress = false
                 //defaults to all
                 tlsProtocols = arrayOf(TLS.V1_3, TLS.V1_2, TLS.V1_1, TLS.V1)
+            }
+            
+## 4 - Update basicAuthLogin and basicAuthPassword with the acra integration for your app (Example Code is give below):
+            initAcra {
+	            reportFormat = StringFormat.JSON
+	            httpSender {
+		            uri = "/report" /*best guess, you may need to adjust this*/
+		            basicAuthLogin = "your-app-auth-login-will-be-here" //You'll copy this to your Application file
+		            basicAuthPassword = "your-app-password-will-be here" //You'll copy this to your Application file
+		            httpMethod = HttpSender.Method.POST
+	            }
             }
