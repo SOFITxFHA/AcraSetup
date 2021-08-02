@@ -38,7 +38,7 @@ This guide will help the developers into integrating Acra into their projects.
                 tlsProtocols = arrayOf(TLS.V1_3, TLS.V1_2, TLS.V1_1, TLS.V1)
             }
             
-## 4 - Update basicAuthLogin and basicAuthPassword with the acra integration for your app (Example Code is give below):
+## 4 - Update basicAuthLogin and basicAuthPassword with the acra integration that will be shared with you for your app (Example Code is given below):
             initAcra {
 	            reportFormat = StringFormat.JSON
 	            httpSender {
