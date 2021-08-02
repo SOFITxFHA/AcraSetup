@@ -4,11 +4,7 @@ This guide will help the developers into integrating Acra into their projects.
 
 ## 1 - Add Acra dependency into your app build.gradle file:
     implementation("ch.acra:acra-http:$acraVersion")
-    implementation("ch.acra:acra-mail:$acraVersion")
-    implementation("ch.acra:acra-core:$acraVersion")
-    implementation("ch.acra:acra-dialog:$acraVersion")
-    implementation("ch.acra:acra-notification:$acraVersion")
-    implementation("ch.acra:acra-toast:$acraVersion")
+    implementation("ch.acra:acra-core:$acraVersion")   
     
 ## 2 - Add Acra version ext to your project level build.gradle file
     ext.acraVersion = "5.8.2"
