@@ -14,12 +14,10 @@ This guide will help the developers into integrating Acra into their projects.
         initAcra {
             reportFormat = StringFormat.JSON
             httpSender {
-                //required. Https recommended
                 uri = "http://172.105.78.169:8080/report"
-                //optional. Enables http basic auth
                 basicAuthLogin = "xxxxxxxx" //TODO Update this with your app integration
-                //required if above set
                 basicAuthPassword = "xxxxxxxxxx" //TODO Update this with your app integration
+		httpMethod = HttpSender.Method.POST
             }
             
 ## 4 - Update basicAuthLogin and basicAuthPassword with the acra integration that will be shared with you for your app (Example Code is given below):
