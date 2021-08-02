@@ -21,5 +21,5 @@ This guide will help the developers into integrating Acra into their projects.
             }
 	    }
 	    
-## 4 - Remove the TODO tags once your update your "basicAuthLogin" and "basicAuthPassword"
+## 4 - Remove the TODO tags once you update your "basicAuthLogin" and "basicAuthPassword"
 And just like that, your Acra integration is done!
