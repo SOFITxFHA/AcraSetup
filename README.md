@@ -10,7 +10,6 @@ This guide will help the developers into integrating Acra into their projects.
     ext.acraVersion = "5.8.2"
 
 ## 3 - Add the following code to your Application class:
-    CrashReporter.initialize(this, path)
         initAcra {
             reportFormat = StringFormat.JSON
             httpSender {
